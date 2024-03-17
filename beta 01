@@ -7,7 +7,7 @@ sudo apt install curl tar wget clang pkg-config libssl-dev jq build-essential bs
 
 sourcecho "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_go to room
 source
-
+000xxx000
 000xxx000
 ---------------------------------
 echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_go to room
