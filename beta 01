@@ -12,7 +12,8 @@ source
 ---------------------------------
 echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_go to room
 source
-
+sourcecho "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_go to room
+source
 000xxx000
 ---------------------------------
 sudo rm -rf /usr/local/go
