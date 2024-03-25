@@ -5,8 +5,6 @@ sudo apt update && sudo apt upgrade -y
 ---------------------------------------------
 sudo apt install curl tar wget clang pkg-config libssl-dev jq build-essential bsdmainutils git make ncdu -y
 
-sourcecho "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_go to room
-source
 000xxx000
 000xxx000
 ---------------------------------
