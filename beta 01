@@ -188,6 +188,7 @@ echo 'export CELESTIA_ADDR='${CELESTIA_ADDR} >> $HOME/.bash_prof
 celestia-appd q bank balances xxxmmm
 celestia-appd q bank balances xxxmmm
 
+cp xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx /root/nulink
 -------------------------------
 echo 'export CELESTIA_CHAIN='$CELESTIA_CHAIN >> $HOME/.bash_profile
 echo 'export CELESTIA_NODENAME='${CELESTIA_NODENAME} >> $HOME/.bash_profile
