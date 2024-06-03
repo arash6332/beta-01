@@ -5,7 +5,6 @@ sudo apt update && sudo apt upgrade -y
 ---------------------------------------------
 000xxx000
 000xxx000
-000xxx000
 ---------------------------------
 echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_go to room
 source
