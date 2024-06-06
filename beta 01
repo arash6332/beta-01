@@ -132,7 +132,7 @@ Press CTRL+C to stop the logs
 -------------------------------------------------------------
 
 sudo systemctl stop celestia-appd
-
+sed -i 's/snapshot-interval *=.*/snapshot-interval = 0/' $HOME/.celestia-app/config/app.toml
 --------------------------------------------------------------
 
 cd $HOME
