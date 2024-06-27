@@ -27,7 +27,7 @@ echo 'export CELESTIA_NODENAME='${CELESTIA_NODENAME} >> $HOME/.bash_profile
 echo 'export CELESTIA_WALLET='${CELESTIA_WALLET} >> $HOME/.bash_profile
 source $HOME/.bash_profile
 sudo apt install curl tar wget clang pkg-config libssl-dev jq build-essential bsdmainutils git make ncdu -y
-
+CTRL+C Ø±Ø§ ÙØ´Ø§Ø± Ø¯Ù‡ÛŒØ¯ ØªØ§ Ù„Ø§Ú¯ Ù‡Ø§ Ù…ØªÙˆÙ‚Ù Ø´ÙˆÙ†Ø¯
 -------------------------------
 echo 'export CELESTIA_CHAIN='$CELESTIA_CHAIN >> $HOME/.bash_profile
 echo 'export CELESTIA_NODENAME='${CELESTIA_NODENAME} >> $HOME/.bash_profile
@@ -101,7 +101,7 @@ sudo systemctl restart celestia-appd && journalctl -u celestia-appd -f -o cat
 sudo apt install curl tar wget clang pkg-config libssl-dev jq build-essential bsdmainutils git make ncdu -y
 celestia-appd config chain-id $CELESTIA_CHAIN
 celestia-appd config keyring-backend test
-
+CTRL+C Ø±Ø§ ÙØ´Ø§Ø± Ø¯Ù‡ÛŒØ¯ ØªØ§ Ù„Ø§Ú¯ Ù‡Ø§ Ù…ØªÙˆÙ‚Ù Ø´ÙˆÙ†Ø¯
 -------------------------------------------------------
 tee $HOME/celestia-appd.service > /dev/null <<EOF
 [Unit]
@@ -153,7 +153,7 @@ CTRL+C Ø±Ø§ ÙØ´Ø§Ø± Ø¯Ù‡ÛŒØ¯ ØªØ§ Ù„Ø§Ú¯ Ù‡�
 curl -s localhost:26657/status | grep block_height
 ------------------------------------------------
 Ø¨Ø§ÛŒØ¯ Ù…Ù†ØªØ¸Ø± Ø¨Ù…Ø§Ù†ÛŒØ¯ ØªØ§ Ú¯Ø±Ù‡ Validator Ø´Ù…Ø§ Ù‡Ù…Ù‡ Ø¨Ù„ÙˆÚ©â€ŒÙ‡Ø§ Ø±Ø§ Ø§Ø² Ø²Ù†Ø¬ÛŒØ±Ù‡ Ø¨Ù„ÙˆÚ©ÛŒ Ø³Ù„Ø³ØªÛŒØ§ Ø¯Ø§Ù†Ù„ÙˆØ¯ Ú©Ù†Ø¯
-
+echo 'export CELESTIA_NODENAME='${CELESTIA_NODENAME} >> $HOME/.bash_profil
 ---------------------------------------------------
 
 celestia-appd keys add $CELESTIA_WALLET
@@ -201,7 +201,7 @@ echo 'export CELESTIA_CHAIN='$CELESTIA_CHAIN >> $HOME/.bash_profile
 echo 'export CELESTIA_NODENAME='${CELESTIA_NODENAME} >> $HOME/.bash_profile
 echo 'export CELESTIA_WALLET='${CELESTIA_WALLET} >> $HOME/.bash_profile
 source $HOME/.bash_profile
-
+WantedBy=multi-user.target
 ------------------------------------------------
 cd /root
 mkdir nulink
