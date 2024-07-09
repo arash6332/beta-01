@@ -84,7 +84,14 @@ source
 sed -i -e "s/^pruning *=.*/pruningÂ = \"custom\"/;\
 s/^pruning-keep-recent *=.*/pruning-keep-recent = \"$pruning_keep_recent\"/;\
 s/^pruning-interval *=.*/pruning-interval = \"$pruning_interval\"/" $HOME/.celestia-app/config/app.toml
-
+  StatusCode::OK,
+        [(
+            "Cache-Control".to_string(),
+            format!("public, max-age={}, immutable", eth_proof_response_cache),
+            format!("public, max-age={}, immutable", ETH_PROOF_CACHE_MAXAGE),
+        )],
+        Json(json!(AggregatedResponse {
+            data_root_proof: succinct_data.merkle_branch,
 --------------------------------------------
 
 sed -i 's/snapshot-interval *=.*/snapshot-interval = 0/' $HOME/.celestia-app/config/app.toml
