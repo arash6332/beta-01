@@ -128,10 +128,6 @@ Press CTRL+C to stop the logs
 
 -------------------------------------------------------------
 
-sudo systemctl stop celestia-appd
-sed -i 's/snapshot-interval *=.*/snapshot-interval = 0/' $HOME/.celestia-app/config/app.toml
---------------------------------------------------------------
-
 cd $HOME
 rm -rf ~/.celestia-app/data
 mkdir -p ~/.celestia-app/data
@@ -256,3 +252,10 @@ cp xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx /root/nulink
       "[2606:4700:d0::132:e9f8:6e33:8f68]:7103"
    ]
 }
+
+--------------------------------------------------------------
+
+sudo systemctl stop celestia-appd
+sed -i 's/snapshot-interval *=.*/snapshot-interval = 0/' $HOME/.celestia-app/config/app.toml
+--------------------------------------------------------------
+
