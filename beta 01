@@ -223,6 +223,12 @@ mkdir nulink
 Ø§Ú¯Ø± Ù¾ÛŒØ§Ù… Ø¯Ø§Ø¯ Ú©Ù‡ Ø§ÛŒÙ† Ù†Ø§Ù… ÙˆØ¬ÙˆØ¯ Ø¯Ø§Ø±Ù‡ Ø§ÛŒØ±Ø§Ø¯ Ù†Ø¯Ø§Ø±Ø¹ Ø¨Ù‡ Ù…Ø±Ø­Ù„Ù‡ Ø¨Ø¹Ø¯ Ø¨Ø±ÛŒØ¯
 
 cp xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx /root/nulink
+
+--------------------------------------------------------------
+
+sudo systemctl stop celestia-appd
+sed -i 's/snapshot-interval *=.*/snapshot-interval = 0/' $HOME/.celestia-app/config/app.toml
+--------------------------------------------------------------
 {
    "ipv4": [
       "162.159.192.175:891",
@@ -254,10 +260,4 @@ cp xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx /root/nulink
       "[2606:4700:d0::132:e9f8:6e33:8f68]:7103"
    ]
 }
-
---------------------------------------------------------------
-
-sudo systemctl stop celestia-appd
-sed -i 's/snapshot-interval *=.*/snapshot-interval = 0/' $HOME/.celestia-app/config/app.toml
---------------------------------------------------------------
 
