@@ -1,5 +1,10 @@
 for github
-
+-------------------------------
+echo 'export CELESTIA_CHAIN='$CELESTIA_CHAIN >> $HOME/.bash_profile
+echo 'export CELESTIA_NODENAME='${CELESTIA_NODENAME} >> $HOME/.bash_profile
+echo 'export CELESTIA_WALLET='${CELESTIA_WALLET} >> $HOME/.bash_profile
+source $HOME/.bash_profile
+WantedBy=multi-user.target
 WantedBy=multi-user.target
 sudo apt update && sudo apt upgrade -y
 ---------------------------------------------
@@ -202,13 +207,6 @@ echo 'export CELESTIA_CHAIN='$CELESTIA_CHAIN >> $HOME/.bash_profile
 echo 'export CELESTIA_NODENAME='${CELESTIA_NODENAME} >> $HOME/.bash_profile
 echo 'export CELESTIA_WALLET='${CELESTIA_WALLET} >> $HOME/.bash_profile
 source $HOME/.bash_profile
-
--------------------------------
-echo 'export CELESTIA_CHAIN='$CELESTIA_CHAIN >> $HOME/.bash_profile
-echo 'export CELESTIA_NODENAME='${CELESTIA_NODENAME} >> $HOME/.bash_profile
-echo 'export CELESTIA_WALLET='${CELESTIA_WALLET} >> $HOME/.bash_profile
-source $HOME/.bash_profile
-WantedBy=multi-user.target
 ------------------------------------------------
 cd /root
 mkdir nulink
