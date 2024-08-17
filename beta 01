@@ -329,13 +329,6 @@ unique_urls=(
   "https://rpc.airchains.stakeup.tech/"
   "https://airchains-testnet-rpc.mekonglabs.tech/"
 )
-
-function select_random_url {
-  local array=("$@")
-  local rand_index=$(( RANDOM % ${#array[@]} ))
-  echo "${array[$rand_index]}"
-}
-
 function update_rpc_and_restart {
   local random_url=$(select_random_url "${unique_urls[@]}")
   sed -i -e "s|JunctionRPC = \"[^\"]*\"|JunctionRPC = \"$random_url\"|" "$config_file"
@@ -344,6 +337,13 @@ function update_rpc_and_restart {
   echo -e "\e[32mRemoved RPC URL: $random_url\e[0m"
   sleep "$restart_delay"
 }
+function select_random_url {
+  local array=("$@")
+  local rand_index=$(( RANDOM % ${#array[@]} ))
+  echo "${array[$rand_index]}"
+}
+
+
 
 function display_waiting_message {
   echo -e "\e[35mI am waiting for you AIRCHAIN\e[0m"
