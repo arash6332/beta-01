@@ -43,6 +43,13 @@ sudo tar -C /usr/local -xzf "go$ver.linux-amd64.tar.gz"
 echo 'export CELESTIA_CHAIN='$CELESTIA_CHAIN >> $HOME/.bash_profile
 ------------------------------------------------
 for bridge
+# Builds a Windows installer with NSIS.
+# It expects the following command line arguments:
+# - OUTPUTFILE, filename of the installer (without extension)
+# - MAJORVERSION, major build version
+# - MINORVERSION, minor build version
+# - BUILDVERSION, build id version
+#
 -------------------------------------
 cp $HOME/networks/mamaki/genesis.json $HOME/.celestia-app/config/
 ---------------------------------------
