@@ -8,7 +8,10 @@ sudo tar -C /usr/local -xzf "go$ver.linux-amd64.tar.gz"echo "export PATH=$PATH:/
 sourcecho "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_go to room
 source
 sudo apt install curl tar wget clang pkg-config libssl-dev jq build-essential bsdmainutils git make ncdu -y
-
+\\
+Ø§Ø·Ù„Ø§Ø¹Ø§Øª  Ø¯Ø§Ø®Ù„ "" Ø±Ùˆ Ù¾Ø§Ú© Ú©Ù†ÛŒØ¯(ÙÙ‚Ø· Ø®Ø· Ø§ÙˆÙ„ Ùˆ Ø¯ÙˆÙ…) Ùˆ Ø§Ø·Ù„Ø§Ø¹Ø§Øª Ø®ÙˆØ¯ØªÙˆÙ† Ø±Ùˆ Ù‚Ø±Ø§Ø± Ø¨Ø¯ÛŒ
+WantedBy=multi-user.target
+ADA
 
 ---------------------------------------------
 \\
