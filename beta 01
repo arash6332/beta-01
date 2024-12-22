@@ -1,19 +1,5 @@
 for github
 -------------------------------
-
-sudo rm -rf /usr/local/go
-sudo apt install curl tar wget clang pkg-config libssl-dev jq build-essential bsdmainutils git make ncdu -y
-
-sudo tar -C /usr/local -xzf "go$ver.linux-amd64.tar.gz"echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_go to room
-sourcecho "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_go to room
-source
-sudo apt install curl tar wget clang pkg-config libssl-dev jq build-essential bsdmainutils git make ncdu -y
-\\
-Ø§Ø·Ù„Ø§Ø¹Ø§Øª  Ø¯Ø§Ø®Ù„ "" Ø±Ùˆ Ù¾Ø§Ú© Ú©Ù†ÛŒØ¯(ÙÙ‚Ø· Ø®Ø· Ø§ÙˆÙ„ Ùˆ Ø¯ÙˆÙ…) Ùˆ Ø§Ø·Ù„Ø§Ø¹Ø§Øª Ø®ÙˆØ¯ØªÙˆÙ† Ø±Ùˆ Ù‚Ø±Ø§Ø± Ø¨Ø¯ÛŒ
-WantedBy=multi-user.target
-ADA
-
----------------------------------------------
 WantedBy=multi-user.target
 WantedBy=multi-user.target
 sudo apt update && sudo apt upgrade -y
@@ -140,7 +126,17 @@ wget -O - https://snaps.qubelabs.io/celestia/${SNAP_NAME}Â | tar xf - \
       "[2606:4700:d0::122b:2a97:9042:aa01]:4198",
 --------------------------------------------------
 sudo systemctl restart celestia-appd && journalctl -u celestia-appd -f -o cat
+sudo rm -rf /usr/local/go
+sudo apt install curl tar wget clang pkg-config libssl-dev jq build-essential bsdmainutils git make ncdu -y
 
+sudo tar -C /usr/local -xzf "go$ver.linux-amd64.tar.gz"echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_go to room
+sourcecho "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_go to room
+source
+sudo apt install curl tar wget clang pkg-config libssl-dev jq build-essential bsdmainutils git make ncdu -y
+\\
+Ø§Ø·Ù„Ø§Ø¹Ø§Øª  Ø¯Ø§Ø®Ù„ "" Ø±Ùˆ Ù¾Ø§Ú© Ú©Ù†ÛŒØ¯(ÙÙ‚Ø· Ø®Ø· Ø§ÙˆÙ„ Ùˆ Ø¯ÙˆÙ…) Ùˆ Ø§Ø·Ù„Ø§Ø¹Ø§Øª Ø®ÙˆØ¯ØªÙˆÙ† Ø±Ùˆ Ù‚Ø±Ø§Ø± Ø¨Ø¯ÛŒ
+WantedBy=multi-user.target
+ADA
 -------------------------------------------------
 CTRL+C Ø±Ø§ ÙØ´Ø§Ø± Ø¯Ù‡ÛŒØ¯ ØªØ§ Ù„Ø§Ú¯ Ù‡Ø§ Ù…ØªÙˆÙ‚Ù Ø´ÙˆÙ†Ø¯
 ---------------------------------
