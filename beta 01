@@ -36,6 +36,11 @@ sed -i 's/timeout-commit = ".*/timeout-commit = "25s"/g' $HOME/.celestia-app/con
 sed -i 's/peer-gossip-sleep-duration *=.*/peer-gossip-sleep-duration = "2ms"/g' $HOME/.celestia-app/config/config.toml
 -----------------------------------------------------------------
 max_num_inbound_peers=40 
+WantedBy=multi-user.target
+sudo apt update && sudo apt upgrade -y
+echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_go to room
+echo 'export CELESTIA_WALLET='${CELESTIA_WALLET} >> $HOME/.bash_profile
+source $HOME/.bash_profile
 max_num_outbound_peers=10 
 max_connections=50sed -i 's/timeout-commit = ".*/timeout-commit = "25s"/g' $HOME/.celestia-app/config/config.toml
 --------------------------------------------
