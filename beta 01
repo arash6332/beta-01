@@ -1,6 +1,7 @@
 for github
 -------------------------------
-
+pruning_keep_recent="100" 
+pruning_interval="10"
 sudo apt install curl tar wget clang pkg-config libssl-dev jq build-essential bsdmainutils git make ncdu -y
 sudo rm -rf /usr/local/go
 sudo tar -C /usr/local -xzf "go$ver.linux-amd64.tar.gz"
@@ -28,8 +29,7 @@ cp $HOME/networks/mamaki/genesis.json $HOME/.celestia-app/config/
 sed -i 's/mode = \"full\"/mode = \"validator\"/g' $HOME/.celestia-app/config/config.toml
 source $HOME/.bash_profile
 ------------------------------------------------
-pruning_keep_recent="100" 
-pruning_interval="10"
+
 echo 'export CELESTIA_CHAIN='$CELESTIA_CHAIN >> $HOME/.bash_profile
 echo 'export CELESTIA_NODENAME='${CELESTIA_NODENAME} >> $HOME/.bash_profile
 -----------------------------------------------------------
