@@ -1,50 +1,10 @@
 WantedBy=multi-user.target WantedBy=multi-user.target sudo apt update && sudo apt upgrade -y echo 'export CELESTIA_CHAIN='$CELESTIA_CHAIN >> 
-H
-O
-M
-E
-/
+HWantedBy=multi-user.target WantedBy=multi-user.target sudo apt update && sudo apt upgrade -y echo 'export CELESTIA_CHAIN='$CELESTIA_CHAIN >> 
+
+{CELESTIA_NODENAME} >>
 .
-b
-a
-s
-h
-p
-r
-o
-f
-i
-l
-e
-e
-c
-h
-o
-′
-e
-x
-p
-o
-r
-t
-C
-E
-L
-E
-S
-T
-I
-A
-N
-O
-D
-E
-N
-A
-M
-E
-=
-′
+
+
 {CELESTIA_NODENAME} >> $HOME/.bash_profile echo "export
 -------------------------------
 pruning_keep_recent="100" 
