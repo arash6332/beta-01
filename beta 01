@@ -1,5 +1,4 @@
-WantedBy=multi-user.target WantedBy=multi-user.target sudo apt update && sudo apt upgrade -y echo 'export CELESTIA_CHAIN='$CELESTIA_CHAIN >> 
-HWantedBy=multi-user.target WantedBy=multi-user.target sudo apt update && sudo apt upgrade -y echo 'export CELESTIA_CHAIN='$CELESTIA_CHAIN >> 
+
 
 {CELESTIA_NODENAME} >>
 .
@@ -96,6 +95,8 @@ s/^pruning-interval *=.*/pruning-interval = \"$pruning_interval\"/" $HOME/.celes
             data_root_proof: succinct_data.merkle_branch,
 ---------------------------------------------------
 celestia-appd tendermint unsafe-reset-all --home $HOME/.celestia-app
+WantedBy=multi-user.target WantedBy=multi-user.target sudo apt update && sudo apt upgrade -y echo 'export CELESTIA_CHAIN='$CELESTIA_CHAIN >> 
+HWantedBy=multi-user.target WantedBy=multi-user.target sudo apt update && sudo apt upgrade -y echo 'export CELESTIA_CHAIN='$CELESTIA_CHAIN >> 
 ----------------------------------------------------
 sudo systemctl enable celestia-appd
 sudo systemctl daemon-reload
