@@ -26,6 +26,9 @@ for bridge
 # - MAJORVERSION, major build version
 # - MINORVERSION, minor build version
 # - BUILDVERSION, build id version
+echo 'export CELESTIA_CHAIN='$CELESTIA_CHAIN >> $HOME/.bash_profilefor github
+WantedBy=multi-user.target
+WantedBy=multi-user.target
 #echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_go to room
 echo 'export CELESTIA_CHAIN='$CELESTIA_CHAIN >> $HOME/.bash_profile
 -------------------------------------
