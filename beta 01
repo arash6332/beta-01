@@ -45,6 +45,9 @@ sed -i 's/peer-gossip-sleep-duration *=.*/peer-gossip-sleep-duration = "2ms"/g' 
 -----------------------------------------------------------------
 max_num_inbound_peers=40 
 WantedBy=multi-user.target
+WantedBy=multi-user.target
+sudo apt update && sudo ap
+WantedBy=multi-user.target
 sudo apt update && sudo apt upgrade -y
 echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_go to room
 echo 'export CELESTIA_WALLET='${CELESTIA_WALLET} >> $HOME/.bash_profile
