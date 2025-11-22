@@ -1,0 +1,41 @@
+import random
+import string
+
+def generate_random_code(length=12):
+    chars = string.ascii_letters + string.digits
+    return ''.join(random.choice(chars) for _ in range(length))
+
+if __name__ == "__main__":
+    print("Random Code:", generate_random_code())
+# README.md
+
+# gh-quick-info
+
+A tiny CLI tool to fetch basic information about a GitHub repository (stars, forks, open issues, description).
+
+## Features
+- Query any public GitHub repo by `owner/repo`.
+- Optional `GITHUB_TOKEN` support to increase API rate limits.
+- Simple, zero-configuration CLI.
+
+## Requirements
+- Python 3.8+
+- `pip install -r requirements.txt`
+
+## Install
+```bash
+git clone <your-repo-url>
+cd <your-repo-dir>
+pip install -r requirements.txt
+# Basic usage
+python main.py octocat/Hello-World
+
+# With GitHub token (recommended if you plan many requests)
+export GITHUB_TOKEN="ghp_xxx..."
+python main.py octocat/Hello-World
+Repository: octocat/Hello-World
+Description: My first repository on GitHub!
+Stars: 1800
+Forks: 150
+Open issues: 12
+Default branch: main
